@@ -12,5 +12,45 @@
 
 <body>
 
+    <div class="imageBc">
+
+        <div class="heading"><h1>Crystal Collector!</h1></div>
+
+        <div class="main">
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+            <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        </div>
+        
+        <div class="div-3">
+            <div class="randomPc" id="totalDiv"> </div>
+            <div class="wins-loss-tracker">
+                <div class="winOrLoss" id="winLose"> </div>
+                <div>Wins: <span id="winDiv">0</span></div>
+                <div>Losses: <span id="loseDiv">0</span></div>
+            </div>
+        </div>
+        
+        <div class="div-4">
+            <img onclick="CheckWinLoose()" src="assets/images/Red-crystal.png" alt="Red Crystal" width="75" height="75">
+            <img onclick="CheckWinLoose()" src="assets/images/Blue-crystal.png" alt="Blue Crystal" width="75" height="75">
+            <img onclick="CheckWinLoose()" src="assets/images/Yellow-crystal.png" alt="Yellow Crystal" width="75" height="75">
+            <img onclick="CheckWinLoose()" src="assets/images/Green-crystal.png" alt="Green Crystal" width="75" height="75">
+        </div>
+
+        <div class="div-5">
+            Your total is:
+        </div>
+        
+        <div class="div-6">
+            <span id="yourTotalDiv">0</span>
+        </div>
+
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+
 </body>
 </html>
